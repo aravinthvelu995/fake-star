@@ -1,6 +1,6 @@
 A Fake Netflix App
 
-## Firebaes Link
+## Firebase Link
 
 [Fake Star](https://worldergroup.web.app/login)
 
