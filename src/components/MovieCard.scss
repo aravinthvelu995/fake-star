@@ -1,0 +1,86 @@
+.movie-wrapper {
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: #555 #000; /* Thumb and track color */
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping */
+  padding: 10px; /* Optional: Add some padding */
+  gap: 25px;
+  margin-bottom: 2rem;
+  .movie-card {
+    border-radius: var(--border-radius);
+    width: 200px; /* Set fixed width for all items */
+    flex: 0 0 auto; /* Prevent items from shrinking or growing */
+    text-align: center; /* Optional: Center text */
+    position: relative;
+    .rating {
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      width: 35px;
+      height: 35px;
+      background-color: var(--primary-color);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+    }
+    .favourite {
+      position: absolute;
+      right: 10px;
+      top: 15px;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: #fff;
+
+      &.active {
+        color: #ff8787;
+      }
+    }
+    .poster {
+      width: 100%;
+      border-radius: var(--border-radius);
+    }
+    .movie-content {
+      background-color: #fff;
+      color: #000;
+      padding: 0.5rem;
+      border-bottom-left-radius: var(--border-radius);
+      border-bottom-right-radius: var(--border-radius);
+      .title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-weight: 700;
+      }
+      .relase-date {
+        font-size: 0.75rem;
+      }
+    }
+  }
+}
+
+/* WebKit Browsers (Chrome, Safari) */
+.movie-wrapper::-webkit-scrollbar {
+  height: 5px; /* Horizontal scrollbar height */
+  border-radius: 50px; /* Rounded corners */
+}
+
+.movie-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.movie-wrapper::-webkit-scrollbar-thumb {
+  background: #888; /* Thumb color */
+  border-radius: 50px; /* Rounded corners */
+}
+
+.movie-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Thumb color on hover */
+}

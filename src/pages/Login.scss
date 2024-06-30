@@ -1,0 +1,62 @@
+.login {
+  .logo {
+    width: 250px;
+  }
+
+  .login-wrapper {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    min-height: 100vh;
+    background-image: url("../assets/login-banner.jpg");
+    background-size: cover;
+  }
+  .login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+  }
+  .login-content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    background-color: #030303bf;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    height: 75%;
+    .title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-align: start;
+      margin-bottom: 1rem;
+    }
+    .sub-title {
+      font-size: 1rem;
+      font-weight: 500;
+      text-align: start;
+      margin-bottom: 1rem;
+    }
+    .input-container {
+      text-align: start;
+      margin: 0.5rem 1rem 1rem;
+      input {
+        width: -webkit-fill-available;
+        background-color: #333;
+        color: #fff;
+      }
+    }
+    .button-container {
+      margin: 0.5rem 1rem;
+      button {
+        width: -webkit-fill-available;
+        margin-inline: 0rem;
+      }
+      .google-button {
+        background-color: #1356c7;
+      }
+    }
+  }
+}

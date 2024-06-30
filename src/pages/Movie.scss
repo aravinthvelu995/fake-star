@@ -1,0 +1,25 @@
+.movie-detail {
+  .content-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    padding-block: 3rem;
+    @media only screen and (max-width: 480px) {
+      flex-direction: column;
+      width: 90%;
+    }
+    .poster {
+      margin: auto;
+      border-radius: var(--border-radius);
+    }
+    .title {
+      font-weight: 600;
+      font-size: 1.2rem;
+      margin-right: 1rem;
+    }
+    .content {
+      font-size: 1rem;
+      margin: 0;
+    }
+  }
+}
